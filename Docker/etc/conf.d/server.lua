@@ -1,4 +1,13 @@
 -- lua-resty-openidc options
+var = { session = {
+            check = { ua = "off" }
+        },
+        session_storage = "shm",
+        session_name = "session",
+        session_cookie_persistent = "on",
+        session_cookie_path = "/",
+        session_check_ssi = "off"
+    }
 
 -- Gets values from credstash
 local function split(inputstr, sep)
